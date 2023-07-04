@@ -8,6 +8,7 @@ import BasicDrawer from './components/myDrawer';
 import InputFormProps from './components/myInput';
 import Menu from './components/myMenu';
 import Snackbar from './components/mySnackbar';
+import Table from './components/myTable';
 
 function App() {
 
@@ -37,6 +38,8 @@ function App() {
           <Menu/>
           <h1>Snackbar</h1>
           <Snackbar/>
+          <h1>Table</h1>
+          <Table/>
         </Grid>
       </Grid>
     </>
