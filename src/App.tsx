@@ -6,6 +6,7 @@ import BasicCard from './components/myCard';
 import BasicModal from './components/myDialog';
 import BasicDrawer from './components/myDrawer';
 import InputFormProps from './components/myInput';
+import Menu from './components/myMenu';
 
 function App() {
 
@@ -31,6 +32,10 @@ function App() {
           <BasicDrawer />
           <h1>Input com form</h1>
           <InputFormProps/>
+          <h1>Menu</h1>
+          <Menu/>
+          <h1>Menu</h1>
+          <Menu/>
         </Grid>
       </Grid>
     </>
