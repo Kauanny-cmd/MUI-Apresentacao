@@ -7,6 +7,7 @@ import BasicModal from './components/myDialog';
 import BasicDrawer from './components/myDrawer';
 import InputFormProps from './components/myInput';
 import Menu from './components/myMenu';
+import Snackbar from './components/mySnackbar';
 
 function App() {
 
@@ -34,8 +35,8 @@ function App() {
           <InputFormProps/>
           <h1>Menu</h1>
           <Menu/>
-          <h1>Menu</h1>
-          <Menu/>
+          <h1>Snackbar</h1>
+          <Snackbar/>
         </Grid>
       </Grid>
     </>
