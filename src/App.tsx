@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Grid from '@mui/joy/Grid';
 import './App.css'
+import ButtonAppBar from './components/myAppBar'
+import MyButton from './components/myButton';
+import BasicCard from './components/myCard';
+import BasicModal from './components/myDialog';
+import BasicDrawer from './components/myDrawer';
+import InputFormProps from './components/myInput';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Grid container
+        spacing={{ xs: 2, md: 3 }}
+        columns={{ xs: 4, sm: 8, md: 12 }}
+        sx={{ flexGrow: 1 }}>
+          <h1>Componentes mais utilizados do Material UI - MUI</h1>
+        <Grid xs={6}>
+          <h1>AppBar</h1>
+          <ButtonAppBar />
+          <h1>Botão</h1>
+          <MyButton />
+          <h1>Card básico</h1>
+          <BasicCard />
+          <h1>Modal básico</h1>
+          <BasicModal />
+        </Grid>
+        <Grid xs={6} >
+          <h1>Drawer básico</h1>
+          <BasicDrawer />
+          <h1>Input com form</h1>
+          <InputFormProps/>
+        </Grid>
+      </Grid>
     </>
   )
 }
-
 export default App
