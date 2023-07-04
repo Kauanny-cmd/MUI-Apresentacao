@@ -9,6 +9,8 @@ import InputFormProps from './components/myInput';
 import Menu from './components/myMenu';
 import Snackbar from './components/mySnackbar';
 import Table from './components/myTable';
+import Tabs from './components/myTabs';
+import Tooltip from './components/myTooltip';
 
 function App() {
 
@@ -28,6 +30,8 @@ function App() {
           <BasicCard />
           <h1>Modal básico</h1>
           <BasicModal />
+          <h1>Tooltip</h1>
+          <Tooltip/>
         </Grid>
         <Grid xs={6} >
           <h1>Drawer básico</h1>
@@ -40,6 +44,8 @@ function App() {
           <Snackbar/>
           <h1>Table</h1>
           <Table/>
+          <h1>Tabs</h1>
+          <Tabs/>
         </Grid>
       </Grid>
     </>
